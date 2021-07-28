@@ -75,15 +75,13 @@ function Skill() {
           <Tree name="problem solving" />
           <Tree name="automate things" />
         </Tree>
-        <Tree name="there are some random things" />
-        <Tree name="i've learned">
+        <Tree name="there are some random things i've learned">
           <Tree name="making avocado icecream 🥑" />
           <Tree name="organizing things into spreadsheet" />
           <Tree name="i'll teach you 👆, if you hire me" />
         </Tree>
-        <Tree name="back to homepage">
-          <Tree name="👈 click it!"/>
-          <Link onClick={() => history.goBack()}></Link>
+        <Tree name="back to homepage" onClick={() => history.goBack()}>
+            <span onClick={() => history.goBack()}><Tree name="click here! 👈"/></span>
         </Tree>
         
       </Tree>
