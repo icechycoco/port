@@ -1,4 +1,3 @@
-import logo from '../logo.svg';
 // import './App.css';
 import React from 'react';
 import styled from 'styled-components';
@@ -24,14 +23,14 @@ const Container = styled.div`
 const Wrapper = styled.div`
   
   // flex: 1;
-  width: 500px;
+  // width: 500px;
   // height: 300px;
 
   background-color: white;
 
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   flex-direction: column;
   padding: 15px;
 `;
@@ -40,8 +39,10 @@ const Text = styled.p`
   font-size: 1em;
   lineHeight 1em;
   color: black;
-  margin-block-start: 0.2em;
-  margin-block-end: 0.2em;`;
+  text-align: center;
+  // margin-block-start: 0.2em;
+  // margin-block-end: 0.2em;
+  `;
 
   const Link = styled.a`
     color: gray;
@@ -53,8 +54,6 @@ const Text = styled.p`
         // text-decoration: underline;
         color: black;
     };
-    width: 40px;
-    height: 40px;
 `;
 
 function Aboutme() {
@@ -67,9 +66,9 @@ function Aboutme() {
             {/* <p style={{fontSize:'20px'}}>👈</p> */}
             </Link>
           <Wrapper>
-            <Text>nareegarn here.</Text>
-            <Text>i like data stuffs, coding, and design</Text>
-            <Text>a hybrid data person 🤓</Text>
+            <Text>nareegarn here.<br/>
+            i like data stuffs, coding, and design.
+            a hybrid data person 🤓</Text>
           </Wrapper>
         </Container>
   );

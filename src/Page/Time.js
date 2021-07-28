@@ -24,8 +24,8 @@ const Container = styled.div`
 
 const Wrapper = styled.section`
   // flex:1;
-  padding: 20px;
-  padding-top: 5px;
+  // padding: 20px;
+  // padding-top: 5px;
   background: white;
   margin:50px;
 `;
@@ -40,8 +40,6 @@ left: 3%;
     // text-decoration: underline;
     color: black;
 };
-width: 40px;
-height: 40px;
 `;
 
   const items = [{
@@ -125,7 +123,7 @@ function Time() {
         <Container>
           <Link onClick={() => history.goBack()}>
             <FaChevronCircleLeft style={{width: '20px' ,height: '20px'}}/>
-            </Link>
+          </Link>
           <Wrapper>
             <Chrono
               items={items}

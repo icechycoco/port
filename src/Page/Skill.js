@@ -22,7 +22,7 @@ function Tree({ children, name, style, open = false }) {
   return (
     <Frame >
       <Icon style={{ ...toggle, opacity: children ? 1 : 0.3}} onClick={() => setOpen(!isOpen)}></Icon>
-      <span style={{ verticalAlign: 'middle', ...style }}>{name}</span>
+      <span style={{ verticalAlign: 'middle', fontSize:'12px' , ...style }}>{name}</span>
       <Content style={{ opacity, height: height.interpolate(height => (isOpen && prev === isOpen ? 'auto' : height)) }}>
         <animated.div style={{ transform }} {...bind}>
           {children}
@@ -42,8 +42,6 @@ left: 3%;
     // text-decoration: underline;
     color: black;
 };
-width: 40px;
-height: 40px;
 `;
 
 function Skill() {
@@ -51,16 +49,18 @@ function Skill() {
 
   return (
     <Container>
-      <Link onClick={() => history.goBack()}><FaChevronCircleLeft style={{width: '20px' ,height: '20px'}}/></Link>
+      <Link onClick={() => history.goBack()}>
+        {/* <FaChevronCircleLeft style={{width: '20px' ,height: '20px'}}/> */}
+      </Link>
       <Tree name="skills" defaultOpen>
-        <Tree name="programming languages">
+        <Tree name="programming languages" >
           <Tree name="java" />
           <Tree name="react" />
           <Tree name="html" />
           <Tree name="css" />
           <Tree name="python" />
           <Tree name="sql" />
-        </Tree>
+        </Tree> 
         <Tree name="tools & programs">
           <Tree name="etl tools (Talend)" />
           <Tree name="git" />
@@ -80,6 +80,10 @@ function Skill() {
           <Tree name="making avocado icecream 🥑" />
           <Tree name="organizing things into spreadsheet" />
           <Tree name="i'll teach you 👆, if you hire me" />
+        </Tree>
+        <Tree name="back to homepage">
+          <Tree name="👈 click it!"/>
+          <Link onClick={() => history.goBack()}></Link>
         </Tree>
         
       </Tree>

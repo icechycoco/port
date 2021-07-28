@@ -23,8 +23,8 @@ const Container = styled.div`
 const Wrapper = styled.div`
   
   // flex: 1;
-  width: 500px;
-  height: 300px;
+  // width: 500px;
+  // height: 300px;
 
   background-color: white;
 
@@ -37,8 +37,10 @@ const Wrapper = styled.div`
 const Text = styled.p`
   font-size: 1.2em;
   color: black;
-  margin-block-start: 0.2em;
-  margin-block-end: 0.2em;`;
+  text-align: center;
+  // margin-block-start: 0.2em;
+  // margin-block-end: 0.2em;
+  `;
 
   const Link = styled.a`
   color: gray;
@@ -50,8 +52,6 @@ const Text = styled.p`
       // text-decoration: underline;
       color: black;
   };
-  width: 40px;
-  height: 40px;
 `;
 
 function Sandbox() {
@@ -59,7 +59,9 @@ function Sandbox() {
 
   return (
         <Container>
-          <Link onClick={() => history.goBack()}><FaChevronCircleLeft style={{width: '20px' ,height: '20px'}}/></Link>
+          <Link onClick={() => history.goBack()}>
+            <FaChevronCircleLeft style={{width: '20px' ,height: '20px'}}/>
+          </Link>
           <Wrapper>
             <Text>🚧</Text>
             <Text>in progress of collecting my projects</Text>

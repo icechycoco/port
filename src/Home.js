@@ -1,11 +1,7 @@
-import logo from './logo.svg';
-// import './App.css';
 
 import {Link } from "react-router-dom";
 import { Blob } from 'react-blob'
 import styled from 'styled-components';
-// import useWindowDimensions from './Hook/useWindowDimensions';
-
 import './BlobStyles.css';
 
 const Container = styled.div`
@@ -81,7 +77,7 @@ function Home() {
           {/* <p>width: {width} ~ height: {height}</p> */}
           <StyledLink to="/aboutme"><Button>about</Button></StyledLink>
           <StyledLink to="/timeline"><Button>timeline</Button></StyledLink>
-          <StyledLink to="/sandbox"><Button>sandbox</Button></StyledLink>
+          <StyledLink to="/sandbox"><Button>projects</Button></StyledLink>
           <StyledLink to="/skill"><Button>skills</Button></StyledLink>
           {/* <StyledLink to="/interest"><Button>interests</Button></StyledLink> */}
           <StyledLink to="/hireme"><Button>contact</Button></StyledLink>

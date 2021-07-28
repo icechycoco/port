@@ -53,10 +53,10 @@ const Container = styled.div`
 `
 
 const Frame = styled('div')`
-  position: relative;
-  padding: 4px 0px 0px 0px;
+  // position: relative;
+  padding: 4px 20px 0px 20px;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  // white-space: nowrap;
   overflow-x: hidden;
   vertical-align: middle;
   color: black;

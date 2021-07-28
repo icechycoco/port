@@ -1,8 +1,6 @@
-import logo from '../logo.svg';
 // import './App.css';
 import styled from 'styled-components';
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import Confetti from 'react-confetti'
 import { useHistory } from "react-router-dom";
 import { FaChevronCircleLeft } from "react-icons/fa";
 
@@ -24,8 +22,8 @@ const Container = styled.div`
 const Wrapper = styled.div`
   
   // flex: 1;
-  width: 500px;
-  height: 300px;
+  // width: 500px;
+  // height: 300px;
 
   background-color: white;
 
@@ -62,8 +60,6 @@ const Text = styled.p`
       // text-decoration: underline;
       color: black;
   };
-  width: 40px;
-  height: 40px;
   `;
 
 function Hireme() {
@@ -73,9 +69,6 @@ function Hireme() {
         <Container>
           <LinkBack onClick={() => history.goBack()}><FaChevronCircleLeft style={{width: '20px' ,height: '20px'}}/></LinkBack>
           <Wrapper> 
-            {/* <Confetti /> */}
-            {/* <Text>congrats to me...</Text> */}
-            {/* <Text></Text> */}
             <Text>nareegarn tansuwansophon</Text>
             <Text>nareegarn.tan@gmail.com</Text>
             <Text>+66851125999 (TH)</Text>
