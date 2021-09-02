@@ -1,13 +1,11 @@
-import logo from '../logo.svg';
 // import './App.css';
 import styled from 'styled-components';
 import { useHistory } from "react-router-dom";
-import { FaChevronCircleLeft } from "react-icons/fa";
 
 import React, { useState } from 'react'
 import { useSpring, animated } from 'react-spring'
 import { useMeasure, usePrevious } from '../helper'
-import { Global, Frame, Content, toggle, Container } from './stylesSkill'
+import { Frame, Content, toggle, Container } from './stylesSkill'
 import * as Icons from '../icons'
 
 function Tree({ children, name, style, open = false }) {
