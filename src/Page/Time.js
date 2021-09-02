@@ -46,11 +46,11 @@ left: 3%;
     title: "04/21 - present",
     cardTitle: "LINE Company (Thailand)",
     cardSubtitle:"data analyst - datalabs team",
-    cardDetailedText: "specialize in cleaning dataset & dashboarding & creating insightful metrics",
+    cardDetailedText: "specialize in dashboarding & creating ecommerce metrics",
   },
   {
     title: "02/21 - present",
-    cardTitle: "global shapper bkk hub",
+    cardTitle: "Global Shapper Bankgok Hub",
     cardSubtitle:"community under world economic forum",
     cardDetailedText: "doing circular economy project",
   },
@@ -58,7 +58,7 @@ left: 3%;
     title: "11/18 - 04/21",
     cardTitle: "Agoda",
     cardSubtitle:"people data analyst",
-    cardDetailedText: "hybrid of data analyst and data sci",
+    cardDetailedText: "improved and optimized people process throught data",
   },
   {
     title: "10/20",
@@ -82,7 +82,7 @@ left: 3%;
     title: "04/19",
     cardTitle: "Smogathon Thailand",
     cardSubtitle:"won 1st prize out of 10 teams",
-    cardDetailedText: "pitched creative solution for sovling pm2.5 in chaingmai",
+    cardDetailedText: "pitched creative solution for sovling pm2.5 in chiangmai",
   },
   {
     title: "05/18",
@@ -93,7 +93,7 @@ left: 3%;
     title: "01/18 - 10/18",
     cardTitle: "gap year @Melbourne",
     // cardSubtitle:"",
-    cardDetailedText: "it was memorable time",
+    cardDetailedText: "i love melbourne <3",
   },
   {
     title: "05/17 - 07/17",

@@ -60,6 +60,8 @@ function Skill() {
           <Tree name="css" />
           <Tree name="python" />
           <Tree name="sql" />
+          <Tree name="hive" />
+          <Tree name="spark" />
         </Tree> 
         <Tree name="tools & programs">
           <Tree name="etl tools (Talend)" />
@@ -73,12 +75,19 @@ function Skill() {
           <Tree name="critical & creative thinking" />
           <Tree name="life-long learning" />
           <Tree name="problem solving" />
-          <Tree name="automate things" />
         </Tree>
         <Tree name="there are some random things i've learned">
-          <Tree name="making avocado icecream 🥑" />
+          <Tree name="making avocado frappe🥑" />
+          <Tree name="crafting rare cheesecake" />
           <Tree name="organizing things into spreadsheet" />
-          <Tree name="i'll teach you 👆, if you hire me" />
+          <Tree name="chatbot and automation" />
+          <Tree name="and learn to let go" />
+          <Tree name="i'll teach you all these 👆, if you hire me" />
+        </Tree>
+        <Tree name="and random things i want to learn">
+          <Tree name="making nice martini🍸" />
+          <Tree name="playing piano" />
+          <Tree name="so many things actually..." />
         </Tree>
         <Tree name="back to homepage" onClick={() => history.goBack()}>
             <span onClick={() => history.goBack()}><Tree name="click here! 👈"/></span>

@@ -67,8 +67,9 @@ function Aboutme() {
             </Link>
           <Wrapper>
             <Text>nareegarn here.<br/>
-            i like data stuffs, coding, and design.
-            a hybrid data person 🤓</Text>
+            i like data stuffs, coding, musics, and design 🤓<br/>
+            know me more throught my <a href='https://open.spotify.com/playlist/41hJmDHceMiJERHXQ7DQZC?si=71921dfffbdc4747'>playlist</a>🎷
+            </Text>
           </Wrapper>
         </Container>
   );
