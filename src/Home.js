@@ -1,6 +1,6 @@
 
 import {Link } from "react-router-dom";
-import { Blob } from 'react-blob'
+// import { Blob } from 'react-blob'
 import styled from 'styled-components';
 import './BlobStyles.css';
 
@@ -38,32 +38,6 @@ const StyledLink = styled(Link)`
 
 `;
 
-const BackgroundBlobTop = ({style}) =>
-  <Blob size="800px"
-    style={{
-        position: 'absolute',
-        // borderWidth: '10px',
-        // borderColor: 'black',
-        background: 'black',
-        opacity: 0.05,
-        left:'-10%',
-        top:'-40%'
-    }} 
-    />
-
-    const BackgroundBlobBottom = ({style}) =>
-    <Blob size="860px" 
-      style={{
-          position: 'absolute',
-          // borderWidth: '10px',
-          // borderColor: 'black',
-          background: 'black',
-          opacity: 0.05,
-          right:'-10%',
-          bottom:'-40%'
-      }} 
-      />
-
      
   // const { height, width } = useWindowDimensions();
 
@@ -76,9 +50,9 @@ function Home() {
           <BackgroundBlobBottom/> */}
           {/* <p>width: {width} ~ height: {height}</p> */}
           <StyledLink to="/aboutme"><Button>about</Button></StyledLink>
-          <StyledLink to="/timeline"><Button>timeline</Button></StyledLink>
-          <StyledLink to="/sandbox"><Button>projects</Button></StyledLink>
-          <StyledLink to="/skill"><Button>skills</Button></StyledLink>
+          <StyledLink to="/timeline"><Button>experience</Button></StyledLink>
+          <StyledLink to="/skill"><Button>skill</Button></StyledLink>
+          <StyledLink to="/sandbox"><Button>project</Button></StyledLink>
           {/* <StyledLink to="/interest"><Button>interests</Button></StyledLink> */}
           <StyledLink to="/hireme"><Button>contact</Button></StyledLink>
           {/* <div class="shape-blob"></div> */}

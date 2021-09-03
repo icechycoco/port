@@ -1,4 +1,3 @@
-// import './App.css';
 import styled from 'styled-components';
 // import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 
@@ -45,43 +44,43 @@ left: 3%;
     title: "04/21 - present",
     cardTitle: "LINE Company (Thailand)",
     cardSubtitle:"data analyst - datalabs team",
-    cardDetailedText: "specialize in dashboarding & creating ecommerce metrics",
+    cardDetailedText: "specialize in dashboarding & creating ecommerce metrics/ deal with large dataset/ analyze search feature in LINE Shopping and monitor LINE Point data",
   },
   {
     title: "02/21 - present",
     cardTitle: "Global Shapper Bankgok Hub",
     cardSubtitle:"community under world economic forum",
-    cardDetailedText: "doing circular economy project",
+    cardDetailedText: "created an online catalogue website about single-use plastic free launching in Phuket night market",
   },
   {
     title: "11/18 - 04/21",
     cardTitle: "Agoda",
     cardSubtitle:"people data analyst",
-    cardDetailedText: "improved and optimized people process throught data",
+    cardDetailedText: "improved and optimized people process throught data/ designed ETL workflow/ automated work to reduce manual time spent",
   },
   {
     title: "10/20",
     cardTitle: "Datathon",
     cardSubtitle:"won 3rd prize out of 12 teams",
-    cardDetailedText: "transformed bangkok's budget.pdf into presentable site",
+    cardDetailedText: "transformed bangkok's budget.pdf into presentable site in 24 hours",
   },
   {
     title: "02/20 - 08/20",
     cardTitle: "TEDxBangkok",
     cardSubtitle:"curator",
-    cardDetailedText: "brought out the best in speakers & helped them created talks",
+    cardDetailedText: "brought out the best in speakers & helped them crafted the talks",
   },
   {
     title: "06/19 - 12/19",
     cardTitle: "TEDxCharoenkrung",
     cardSubtitle:"product owner/ data vizualizer",
-    cardDetailedText: "defined vision & searved others when needed & prioritized tasks & got things done",
+    cardDetailedText: "defined vision of the project & prioritized tasks & got things done/ visualized audiences demographics and interests",
   },
   {
     title: "04/19",
     cardTitle: "Smogathon Thailand",
     cardSubtitle:"won 1st prize out of 10 teams",
-    cardDetailedText: "pitched creative solution for sovling pm2.5 in chiangmai",
+    cardDetailedText: "pitched creative solution for sovling pm2.5 in Chiangmai",
   },
   {
     title: "05/18",
@@ -92,13 +91,13 @@ left: 3%;
     title: "01/18 - 10/18",
     cardTitle: "gap year @Melbourne",
     // cardSubtitle:"",
-    cardDetailedText: "i love melbourne <3",
+    cardDetailedText: "it was so memorable. i <3 Melbourne",
   },
   {
     title: "05/17 - 07/17",
     cardTitle: "internship @SCG",
     cardSubtitle:"web developer",
-    cardDetailedText: "collected data & created knowledge management site",
+    cardDetailedText: "collected data & created knowledge management site/ proposed innovative idea to potentially save +5M a year",
   },
   {
     title: "08/14 - 12/17",
@@ -130,7 +129,7 @@ function Time() {
               hideControls
               cardWidth='300'
               cardHeight='100'
-              useReadMore={false}
+            //   useReadMore={false}
               theme={{primary: "black",secondary: "white", cardBgColor: "transparent", cardForeColor: "black"}}
               />
           </Wrapper>
