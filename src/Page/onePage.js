@@ -4,9 +4,9 @@ import { useHistory } from "react-router-dom";
 
 import React, { useState } from 'react'
 import { useSpring, animated } from 'react-spring'
-import { useMeasure, usePrevious } from '../helper'
+import { useMeasure, usePrevious } from './../helper'
 import { Frame, Content, toggle, Container } from './stylesSkill'
-import * as Icons from '../icons'
+import * as Icons from './../icons'
 
 function Tree({ children, name, style, open = false }) {
   const [isOpen, setOpen] = useState(open)
@@ -41,6 +41,22 @@ left: 3%;
     color: black;
 };
 `;
+
+const Wrapper = styled.div`
+  
+  // flex: 1;
+  // width: 500px;
+  // height: 300px;
+
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+`;
+
 const Text = styled.p`
   font-size: 1em;
   lineHeight 1em;
@@ -50,14 +66,21 @@ const Text = styled.p`
   // margin-block-end: 0.2em;
   `;
 
-function Skill() {
-  let history = useHistory();
+  const onePage = props => {
+
+//   let history = useHistory();
 
   return (
     <Container>
-      <Link onClick={() => history.goBack()}>
+      {/* <Link onClick={() => history.goBack()}> */}
         {/* <FaChevronCircleLeft style={{width: '20px' ,height: '20px'}}/> */}
-      </Link>
+      {/* </Link> */}
+      <Wrapper>
+            <Text>nareegarn here.<br/>
+            i like data stuffs, coding, musics, and design 🤓<br/>
+            know me more throught my <a href='https://open.spotify.com/playlist/41hJmDHceMiJERHXQ7DQZC?si=71921dfffbdc4747'>playlist</a>🎷
+            </Text>
+          </Wrapper>
       <Tree name="skills" defaultOpen>
         <Tree name="programming languages" >
           <Tree name="java" />
@@ -95,13 +118,13 @@ function Skill() {
           <Tree name="playing piano" />
           <Tree name="so many things actually..." />
         </Tree>
-        <Tree name="back to homepage" onClick={() => history.goBack()}>
+        {/* <Tree name="back to homepage" onClick={() => history.goBack()}>
             <span onClick={() => history.goBack()}><Tree name="click here! 👈"/></span>
-        </Tree>
+        </Tree> */}
         
       </Tree>
     </Container>
   );
 }
 
-export default Skill;
+export default onePage;

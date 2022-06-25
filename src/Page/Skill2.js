@@ -9,7 +9,7 @@ import { Frame, Content, toggle, Container } from './stylesSkill'
 import * as Icons from '../icons'
 
 function Tree({ children, name, style, open = false }) {
-  const [isOpen, setOpen] = useState(open)
+  const [isOpen, setOpen] = useState(true)
   const prev = usePrevious(isOpen)
   const [bind, { height: viewHeight }] = useMeasure()
   let { height, opacity, transform } = useSpring({
@@ -50,58 +50,63 @@ const Text = styled.p`
   // margin-block-end: 0.2em;
   `;
 
-function Skill() {
+function Skill2() {
   let history = useHistory();
 
   return (
     <Container>
-      <Link onClick={() => history.goBack()}>
-        {/* <FaChevronCircleLeft style={{width: '20px' ,height: '20px'}}/> */}
-      </Link>
-      <Tree name="skills" defaultOpen>
-        <Tree name="programming languages" >
-          <Tree name="java" />
-          <Tree name="react" />
-          <Tree name="html" />
-          <Tree name="css" />
-          <Tree name="python" />
-          <Tree name="sql" />
-          <Tree name="hive" />
-          <Tree name="spark" />
-        </Tree> 
-        <Tree name="tools & programs">
-          <Tree name="etl tools (Talend)" />
-          <Tree name="git" />
-          <Tree name="data viz like tableau, d3.js" />
-          <Tree name="and many more.. 🤔" />
+      <Tree name="hello, ">
+        <Tree name="nareegarn here!">
+          <Tree name="looking for a meaningful job" />
+          <Tree name="believe in technology" />
+          <Tree name="passionate about data, musics, and design 🤓" />
+          <Tree name={<span>know me more via <a href='https://open.spotify.com/playlist/41hJmDHceMiJERHXQ7DQZC?si=71921dfffbdc4747'>playlist</a> 🎷</span>}/>
         </Tree>
+        <Tree name="work experiences">
+          <Tree name={<span><b>data analyst</b> - LINE Company Thailand 💚</span>}>
+            <Tree name="end-to-end data analytics solution" />
+            <Tree name="dashboarding and analyzing data" />
+            <Tree name="creating e-commerce metrics" />
+            <Tree name="recommend insights and solutions to close business gap" />
+          </Tree> 
+          <Tree name={<span><b>people data analyst</b> - Agoda</span>}>
+            <Tree name="improved and optimized people process throught data" />
+            <Tree name="designed ETL workflow" />
+            <Tree name="automated work to reduce manual time spent" />
+          </Tree> 
+          <Tree name="frontend dev - freelance" />
+        </Tree>
+        <Tree name="programming skills" >
+          <Tree name="java, react, javascript, html, css" />
+          <Tree name="python, sql, presto, spark, hive" />
+          <Tree name="etl, git, tableau, d3.js" />
+        </Tree> 
         <Tree name="🏄‍♂️" />
         <Tree name="soft skills">
           <Tree name="project management" />
-          <Tree name="critical & creative thinking" />
+          <Tree name="critical & creative thinkings" />
           <Tree name="life-long learning" />
           <Tree name="problem solving" />
+          <Tree name="excuting 💪" />
+        </Tree>
+        <Tree name="cool things i have done">
+          <Tree name="curated speakers for TEDxBangkok" />
+          <Tree name="Global Shaper Bangkok community under WEF ♻️" />
+          <Tree name="won 1st place of smogathon thailand" />
         </Tree>
         <Tree name="there are some random things i've learned">
-          <Tree name="making avocado frappe🥑" />
+          <Tree name="making a very nice umeshu 🍸" />
           <Tree name="crafting rare cheesecake" />
           <Tree name="organizing things into spreadsheet" />
           <Tree name="chatbot and automation" />
-          <Tree name="and learn to let go" />
-          <Tree name="i'll teach you all these 👆, if you hire me" />
         </Tree>
-        <Tree name="and random things i want to learn">
-          <Tree name="making nice martini🍸" />
-          <Tree name="playing piano" />
-          <Tree name="so many things actually..." />
+        <Tree name="wanna know me more">
+          <Tree name="please email me nareegarn.tan@gmail.com 📧" />
+          <Tree name="thank you!" />
         </Tree>
-        <Tree name="back to homepage" onClick={() => history.goBack()}>
-            <span onClick={() => history.goBack()}><Tree name="click here! 👈"/></span>
-        </Tree>
-        
       </Tree>
     </Container>
   );
 }
 
-export default Skill;
+export default Skill2;

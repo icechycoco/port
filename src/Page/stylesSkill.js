@@ -42,7 +42,7 @@ const Container = styled.div`
   
   flex: 1;
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
 
   background-color: white;
 
@@ -50,6 +50,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 50px 0px 50px 0px;
 `
 
 const Frame = styled('div')`
