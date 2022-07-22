@@ -3,7 +3,6 @@ import {Link } from "react-router-dom";
 // import { Blob } from 'react-blob'
 import styled from 'styled-components';
 import './BlobStyles.css';
-// import onePageScreen from './Page/onePage';
 
 const Container = styled.div`
   
@@ -46,15 +45,7 @@ function Home() {
 
   return (
         <Container>
-          <onePageScreen />
-          {/* <p>width: {width} ~ height: {height}</p> */}
-          {/* <StyledLink to="/aboutme"><Button>about</Button></StyledLink>
-          <StyledLink to="/timeline"><Button>experience</Button></StyledLink> */}
           <StyledLink to="/skill2"><Button>hello click me 👋</Button></StyledLink>
-          {/* <StyledLink to="/sandbox"><Button>project</Button></StyledLink> */}
-          {/* <StyledLink to="/interest"><Button>interests</Button></StyledLink> */}
-          {/* <StyledLink to="/hireme"><Button>contact</Button></StyledLink> */}
-          {/* <div class="shape-blob"></div>  */}
         </Container>
   );
 }

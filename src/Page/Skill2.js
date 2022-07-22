@@ -55,52 +55,68 @@ function Skill2() {
 
   return (
     <Container>
-      <Tree name="hello, ">
-        <Tree name="nareegarn here!">
+      <Tree name={<b>hello!</b>}>
+        <Tree name={<b>nareegarn here 👋</b>}>
           <Tree name="looking for a meaningful job" />
           <Tree name="believe in technology" />
           <Tree name="passionate about data, musics, and design 🤓" />
           <Tree name={<span>know me more via <a href='https://open.spotify.com/playlist/41hJmDHceMiJERHXQ7DQZC?si=71921dfffbdc4747'>playlist</a> 🎷</span>}/>
         </Tree>
-        <Tree name="work experiences">
-          <Tree name={<span><b>data analyst</b> - LINE Company Thailand 💚</span>}>
-            <Tree name="end-to-end data analytics solution" />
-            <Tree name="dashboarding and analyzing data" />
-            <Tree name="creating e-commerce metrics" />
-            <Tree name="recommend insights and solutions to close business gap" />
+        <Tree name={<b>education</b>}>
+          <Tree name={<span>King Mongkut's University of Technology Thonburi</span>}>
+            <Tree name='Bachelor of Science in Computer Science'></Tree>
+            <Tree name='graduated with second class honors'></Tree>
+          </Tree>
+          
+          <Tree name='Assumptionsuksa School'></Tree>
+        </Tree>
+        <Tree name={<b>employment history</b>}>
+          <Tree name={<span><b>data analyst</b> - LINE Company Thailand 💚 (2021 - present)</span>}>
+            <Tree name="experience in end-to-end data analytics solution" />
+            <Tree name="build dashboards for operational and monitoring purposes" />
+            <Tree name="create e-commerce metrics for business team" />
+            <Tree name="provide product insights and solutions to close business gap" />
           </Tree> 
-          <Tree name={<span><b>people data analyst</b> - Agoda</span>}>
+          <Tree name={<span><b>people data analyst</b> - Agoda (2019 - 2021)</span>}>
             <Tree name="improved and optimized people process throught data" />
             <Tree name="designed ETL workflow" />
             <Tree name="automated work to reduce manual time spent" />
+            <Tree name="created dashboards and analyzed data" />
           </Tree> 
           <Tree name="frontend dev - freelance" />
         </Tree>
-        <Tree name="programming skills" >
+        <Tree name={<b>programming skills 👩‍💻</b>} >
           <Tree name="java, react, javascript, html, css" />
           <Tree name="python, sql, presto, spark, hive" />
           <Tree name="etl, git, tableau, d3.js" />
         </Tree> 
         <Tree name="🏄‍♂️" />
-        <Tree name="soft skills">
+        <Tree name={<b>soft skills</b>}>
           <Tree name="project management" />
           <Tree name="critical & creative thinkings" />
           <Tree name="life-long learning" />
           <Tree name="problem solving" />
-          <Tree name="excuting 💪" />
+          <Tree name="excution 💪" />
         </Tree>
-        <Tree name="cool things i have done">
-          <Tree name="curated speakers for TEDxBangkok" />
+        <Tree name={<b>cool things i have done</b>}>
+          <Tree name="curated talks for TEDxBangkok" />
           <Tree name="Global Shaper Bangkok community under WEF ♻️" />
           <Tree name="won 1st place of smogathon thailand" />
+          <Tree name="organized Agoda people hackathon"/>
         </Tree>
-        <Tree name="there are some random things i've learned">
+        <Tree name={<b>there are some random things i've learned</b>}>
           <Tree name="making a very nice umeshu 🍸" />
           <Tree name="crafting rare cheesecake" />
           <Tree name="organizing things into spreadsheet" />
           <Tree name="chatbot and automation" />
         </Tree>
-        <Tree name="wanna know me more">
+        <Tree name={<b>passions + interests</b>}>
+          <Tree name="music industry" />
+          <Tree name="sustainability 🌱" />
+          <Tree name="building community" />
+          <Tree name="tech for social good 👥" />
+        </Tree>
+        <Tree name={<b>wanna know me more</b>}>
           <Tree name="please email me nareegarn.tan@gmail.com 📧" />
           <Tree name="thank you!" />
         </Tree>
