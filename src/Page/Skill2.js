@@ -78,7 +78,7 @@ function Skill2() {
             <Tree name="provide product insights and solutions to close business gap" />
           </Tree> 
           <Tree name={<span><b>people data analyst</b> - Agoda (2019 - 2021)</span>}>
-            <Tree name="improved and optimized people process throught data" />
+            <Tree name="improved and optimized people process through data" />
             <Tree name="designed ETL workflow" />
             <Tree name="automated work to reduce manual time spent" />
             <Tree name="created dashboards and analyzed data" />
